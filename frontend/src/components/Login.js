@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { auth, googleProvider, facebookProvider, githubProvider } from "../firebase";
+import { auth, googleProvider, githubProvider } from "../firebase";
 import { signInWithPopup } from "firebase/auth";
 import { Container, Button, Card } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
@@ -29,9 +29,6 @@ function Login() {
         <Card.Title className="mb-4 text-center">Sign In</Card.Title>
         <Button className="mb-2 w-100" variant="danger" onClick={() => handleLogin(googleProvider)}>
           Sign in with Google
-        </Button>
-        <Button className="mb-2 w-100" style={{ background: "#4267B2", border: 0 }} onClick={() => handleLogin(facebookProvider)}>
-          Sign in with Facebook
         </Button>
         <Button className="mb-2 w-100" style={{ background: "#333", border: 0 }} onClick={() => handleLogin(githubProvider)}>
           Sign in with GitHub
