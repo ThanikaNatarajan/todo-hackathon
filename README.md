@@ -126,11 +126,6 @@ todo-hackathon/
 
 ---
 
-## License
-
-MIT
-
----
 
 ## Acknowledgments
 
